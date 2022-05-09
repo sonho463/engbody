@@ -1,0 +1,28 @@
+// *----------*
+// colors
+// *----------*
+
+$color-pink:  #EB51C2;
+$color-green:#f0f8ff;
+$color-white: #fff;
+$color-black: #111111;
+$color-border-gray: #707070;
+
+// *----------*
+// font-family
+// *----------*
+
+// *----------*
+// mixin
+// *----------*
+$breakpoints: (
+	"lg":"screen and (min-width:1024px)",
+  "md":"screen and (min-width:768px)",
+  "sm":"screen and (min-width:480px)"
+);
+
+@mixin mq($breakpoint:md){
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}

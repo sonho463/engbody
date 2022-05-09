@@ -1,0 +1,15 @@
+@use "../foundation/variables" as v;
+
+.c-cv-button{
+	background-color: v.$color-pink;
+	border-radius: 999px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 3;
+	&__text{
+		font-size:1.2rem;
+		font-weight: 700;
+		color: v.$color-white;
+	}
+}

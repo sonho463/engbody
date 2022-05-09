@@ -1,0 +1,8 @@
+@use "../foundation/variables" as v;
+
+.u-text-pink{
+color: v.$color-pink !important;
+}
+.u-text-green{
+color: v.$color-green !important;
+}
