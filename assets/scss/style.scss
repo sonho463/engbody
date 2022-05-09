@@ -20,11 +20,14 @@
 @use "./component/section";
 @use "./component/button";
 @use "./component/inline";
+@use "./component/separator";
 
 // *--------------*
 // project
 // *--------------*
-
+@use "./project/mv";
+@use "./project/copy";
+@use "./project/features";
 
 // *--------------*
 // utility

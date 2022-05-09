@@ -1,2 +1,49 @@
-@use "../foundation/variables" as *;
+@use "../foundation/variables" as v;
 
+.p-mv {
+  width: 73%;
+  height: 410px;
+  margin-left: auto;
+  border-bottom-left-radius: 50px;
+  background-image: url(../assets/images/mv/bg_mv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+	display: flex;
+	align-items: center;
+}
+
+.p-mv__text-block{
+	position: absolute;
+	top: 161px;
+	left: 0;
+	margin-left: 5%;
+
+}
+
+.p-mv{
+	&__title__row,&__sub-title{
+		display: inline-block;
+		background-color: v.$color-white;
+	}
+	&__title__row{
+		font-size: 4.2rem;
+		font-style: italic;
+		font-weight: 500;
+		line-height: 1;
+		span{
+			margin-right: 4px;
+		}
+	}
+	&__sub-title{
+		font-size: 1.3rem;
+		margin-top: 10px;
+		font-weight: 700;
+	}
+	&__cv{
+		margin-top: 19px;
+		height: 45px;
+		width: 67%;
+		font-size: 1.3rem;
+	}
+}

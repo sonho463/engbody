@@ -1,0 +1,8 @@
+@use "../foundation/variables" as v;
+
+.c-separator{
+	display: block;
+	height: 50px;
+	width: 100%;
+	background-color: v.$color-pink;
+}

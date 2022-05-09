@@ -1,0 +1,42 @@
+@use "../foundation/variables" as v;
+
+.p-features {
+  margin-top: 20px;
+}
+
+.p-features {
+	&__article + li{
+		margin-top: 42px;
+	}
+	&__image-wrapper{
+		margin-right: calc(50% - 50vw);
+		margin-left: calc(50% - 50vw);
+	}
+	&__text-block{
+		background-color: v.$color-white;
+		transform: translateY(-15px);
+		width: 90%;
+		padding: 42px 10%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 5px;
+		box-shadow: 0 0	20px rgba(0,0,0,.2);
+	}
+  &__article-tag {
+    font-size: 1.8rem;
+  }
+  &__article-title {
+    font-size: 2.2rem;
+  }
+  &__article-desc {
+    font-size: 1.4rem;
+  }
+}
+
+.p-features__cv{
+	margin-top: 40px;
+	width: 80%;
+	height: 53px;
+	margin-right: auto;
+	margin-left: auto;
+}
