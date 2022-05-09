@@ -1,0 +1,36 @@
+@use "../foundation/variables" as v;
+
+.p-trainer__tab-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-trainer__tab-title{
+	width: 50%;
+	color: v.$color-white;
+	padding-top: 10px;padding-bottom: 10px;
+	margin-bottom: 20px;
+	&__text{
+		text-align: center;
+		color: v.$color-white;
+	}
+}
+
+.p-trainer__tab-title.add-underline{
+	border-bottom: 2px solid v.$color-white;
+}
+
+.p-trainer__item + li{
+	margin-top: 15px;
+}
+
+.p-trainer__text-wrapper{
+	padding: 20px;
+}
+
+.p-trainer__text{
+	font-size: 1.4rem;
+	line-height: 1.5;
+	font-weight: 300;
+}

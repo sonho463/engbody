@@ -2,7 +2,14 @@
 
 .c-separator{
 	display: block;
-	height: 50px;
+	// height: 50px;
 	width: 100%;
-	background-color: v.$color-pink;
+	padding-top: 6.6%;
+	// background-color: v.$color-pink;
+	background-image: url(../assets/images/gen/wave.svg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	&:nth-of-type(even){
+		transform: rotate(180deg);
+	}
 }

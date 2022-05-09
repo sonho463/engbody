@@ -547,6 +547,35 @@ a:hover img {
   font-size: 1.2rem;
 }
 
+.l-footer {
+  background-color: #111111;
+  height: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.l-footer__text {
+  color: #fff;
+}
+.l-footer__back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+}
+@media screen and (min-width:1025px) {
+  .l-footer__back-to-top {
+    width: 80px;
+  }
+}
+
 .c-inner {
   max-width: 1194px;
   width: 90%;
@@ -558,6 +587,25 @@ a:hover img {
   width: 89.3%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 40px;
+}
+
+section[class*=p-]:nth-of-type(even):not(.p-copy) {
+  background-color: #EB51C2;
+}
+
+.c-section-title {
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.c-section-title__text {
+  font-size: 4rem;
+  line-height: 1;
+}
+.c-section-title-ja__text {
+  margin-top: 5px;
+  font-size: 1.4rem;
+  line-height: 1;
 }
 
 .c-cv-button {
@@ -587,9 +635,21 @@ a:hover img {
 
 .c-separator {
   display: block;
-  height: 50px;
   width: 100%;
-  background-color: #EB51C2;
+  padding-top: 6.6%;
+  background-image: url(../assets/images/gen/wave.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.c-separator:nth-of-type(even) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.c-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .p-mv {
@@ -705,6 +765,48 @@ a:hover img {
   margin-left: auto;
 }
 
+.p-trainer__tab-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-trainer__tab-title {
+  width: 50%;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.p-trainer__tab-title__text {
+  text-align: center;
+  color: #fff;
+}
+
+.p-trainer__tab-title.add-underline {
+  border-bottom: 2px solid #fff;
+}
+
+.p-trainer__item + li {
+  margin-top: 15px;
+}
+
+.p-trainer__text-wrapper {
+  padding: 20px;
+}
+
+.p-trainer__text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
 .is-hidden {
   display: none;
 }
@@ -729,6 +831,10 @@ a:hover img {
 
 .u-text-green {
   color: #f0f8ff !important;
+}
+
+.u-text-white {
+  color: #fff !important;
 }
 
 .u-bg-white {
