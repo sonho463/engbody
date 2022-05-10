@@ -739,10 +739,7 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   background-color: #fff;
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
-  width: 90%;
   padding: 42px 10%;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -805,6 +802,42 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 300;
+}
+
+div[class*=swiper-button] {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+div[class*=swiper-button]::after {
+  font-size: 1rem;
+  color: #EB51C2;
+}
+
+.p-studio__slider-outer {
+  position: relative;
+}
+
+.swiper-button-next {
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.swiper-button-prev {
+  left: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.swiper-pagination {
+  -webkit-transform: translate3d(0, 40px, 0);
+          transform: translate3d(0, 40px, 0);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #EB51C2;
 }
 
 .is-hidden {

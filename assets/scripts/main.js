@@ -1,3 +1,5 @@
+
+
 // トレーナーとスタッフのタブ切り替え
 const trainer = document.querySelector(".js-trainer");
 const staff = document.querySelector(".js-staff");

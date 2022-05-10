@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
 		rel="stylesheet">
@@ -212,38 +213,38 @@
 							スタジオ
 						</p>
 					</div>
+					<div class="p-studio__slider-outer">
 
-					<div class="p-studio__slider swiper">
-						<ul class="p-studio__slider-wrapper swiper-wrapper">
-							<li class="p-studio__slider-item swiper-slide">
-								<figure class="p-studio__image-wrapepr">
-									<img src="./assets/images/studio/studio01.jpg" alt="スタジオの様子" class="p-studio__image">
-								</figure>
-							</li>
-							<li class="p-studio__slider-item swiper-slide">
-								<figure class="p-studio__image-wrapepr">
-									<img src="./assets/images/studio/studio02.jpg" alt="スタジオの様子２" class="p-studio__image">
-								</figure>
-							</li>
-							<li class="p-studio__slider-item swiper-slide">
-								<figure class="p-studio__image-wrapepr">
-									<img src="./assets/images/studio/studio03.jpg" alt="スタジオの様子３" class="p-studio__image">
-								</figure>
-							</li>
-						</ul>
-						<!-- If we need pagination -->
-						<!-- <div class="swiper-pagination"></div> -->
+						<div class="p-studio__slider swiper">
+							<ul class="p-studio__slider-wrapper swiper-wrapper">
+								<li class="p-studio__slider-item swiper-slide">
+									<figure class="p-studio__image-wrapepr">
+										<img src="./assets/images/studio/studio01.jpg" alt="スタジオの様子" class="p-studio__image">
+									</figure>
+								</li>
+								<li class="p-studio__slider-item swiper-slide">
+									<figure class="p-studio__image-wrapepr">
+										<img src="./assets/images/studio/studio02.jpg" alt="スタジオの様子２" class="p-studio__image">
+									</figure>
+								</li>
+								<li class="p-studio__slider-item swiper-slide">
+									<figure class="p-studio__image-wrapepr">
+										<img src="./assets/images/studio/studio03.jpg" alt="スタジオの様子３" class="p-studio__image">
+									</figure>
+								</li>
+							</ul>
 
-						<!-- If we need navigation buttons -->
+
+							<!-- If we need scrollbar -->
+							<!-- <div class="swiper-scrollbar"></div> -->
+
+						</div>
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>
-
-						<!-- If we need scrollbar -->
-						<div class="swiper-scrollbar"></div>
-
+						
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
 					</div>
-
-					<div class="separator"></div>
 				</div>
 
 			</section>
@@ -457,6 +458,8 @@
 		</footer>
 	</div>
 
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./assets/scripts/studio-slide.js"></script>
 	<script src="./assets/scripts/main.js"></script>
 
 

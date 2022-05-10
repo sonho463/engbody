@@ -1,0 +1,28 @@
+@use "../foundation/variables" as v;
+
+div[class*="swiper-button"]{
+	background-color: #fff;
+	width: 40px;height: 40px;
+	border-radius: 50%;;
+	&::after{
+		font-size: 1rem;
+		color: v.$color-pink;
+	}
+}
+.p-studio__slider-outer{
+	position: relative;
+}
+.swiper-button-next{
+	right: 0;
+	transform: translateX(50%);
+}
+.swiper-button-prev{
+	left: 0;
+	transform: translateX(-50%);
+}
+.swiper-pagination{
+	transform: translate3d(0, 40px,0);
+}
+.swiper-pagination-bullet-active{
+	background-color: v.$color-pink;
+}

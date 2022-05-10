@@ -31,7 +31,7 @@
     "stylelint": "^14.8.1",
     "stylelint-config-standard": "^25.0.0"
   },
-	"overrides": {
-		"portscanner": "2.2.0"
-	}
+  "overrides": {
+    "portscanner": "2.2.0"
+  }
 }
