@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -808,6 +809,7 @@ div[class*=swiper-button]::after {
 .p-price__course {
   font-size: 26px;
   line-height: 64px;
+  color: #EB51C2;
 }
 .p-price__price {
   font-size: 48px;
@@ -838,6 +840,34 @@ div[class*=swiper-button]::after {
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
+}
+.p-price__card-list__outer {
+  position: relative;
+}
+.p-price .price-swiper-button-next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-price div[class*=swiper-button] {
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
+}
+.p-price div[class*=swiper-button] img {
+  width: 55px;
+}
+.p-price div[class*=swiper-button]::after {
+  font-size: 1rem;
+  content: "スクロール";
+  margin-top: -5px;
+  color: #fff;
 }
 
 summary {
@@ -897,6 +927,34 @@ details[open] summary::after {
   line-height: 26px;
   color: #EB51C2;
   margin-right: 20px;
+}
+
+.p-join-us__body {
+  height: 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-join-us__title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.p-join-us__cv {
+  height: 53px;
+  margin-top: 10px;
+  width: 80%;
+}
+.p-join-us__cv .c-cv-button__text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: left;
+  color: #eb51c2;
 }
 
 .is-hidden {

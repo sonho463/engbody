@@ -5,9 +5,14 @@
     padding: 40px 20px 30px;
     text-align: center;
   }
+	&__card{
+		// margin-right: 20px;
+		// margin-left: 20px;
+	}
   &__course {
     font-size: 26px;
     line-height: 64px;
+		color: v.$color-pink;
   }
   &__price {
     font-size: 48px;
@@ -19,6 +24,7 @@
   }
 	&__desc-list{
 		margin-top: 30px;
+
 	}
   &__desc-item {
 		border-top: 1px solid v.$color-border-gray;
@@ -40,4 +46,32 @@
 		}
 
   }
+	&__card-list__outer{
+		position: relative;
+	}
+
+	.price-swiper-button-next{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	div[class*="swiper-button"]{
+		position: absolute;
+		z-index: 50;
+		right: 0;top: 50%;
+		transform: translateY(-50%);
+		background-color: rgba(0,0,0,.6);
+		width: 80px;height: 70px;
+		border-radius: 10px;
+		img{
+			width: 55px;
+		}
+		&::after{
+			font-size: 1rem;
+			content:'スクロール';
+			margin-top: -5px;
+			color: #fff;
+		}
+	}
 }

@@ -1,0 +1,29 @@
+@use "../foundation/variables" as v;
+
+.p-join-us__body {
+  height: 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-join-us__title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.p-join-us__cv {
+  height: 53px;
+	margin-top: 10px;
+	width: 80%;
+  .c-cv-button__text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: left;
+    color: #eb51c2;
+  }
+}

@@ -9,6 +9,15 @@ div[class*="swiper-button"]{
 		color: v.$color-pink;
 	}
 }
+// div[class*="swiper-button"]{
+// 	background-color: #fff;
+// 	width: 40px;height: 40px;
+// 	border-radius: 50%;;
+// 	&::after{
+// 		font-size: 1rem;
+// 		color: v.$color-pink;
+// 	}
+// }
 .p-studio__slider-outer{
 	position: relative;
 }
