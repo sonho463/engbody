@@ -780,6 +780,7 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .p-trainer__tab-title__text {
   text-align: center;
@@ -838,6 +839,116 @@ div[class*=swiper-button]::after {
 
 .swiper-pagination-bullet-active {
   background-color: #EB51C2;
+}
+
+.p-price__card__inner {
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+.p-price__course {
+  font-size: 26px;
+  line-height: 64px;
+}
+.p-price__price {
+  font-size: 48px;
+  line-height: 48px;
+}
+.p-price__admission-fee {
+  font-size: 16px;
+  line-height: 16px;
+}
+.p-price__desc-list {
+  margin-top: 30px;
+}
+.p-price__desc-item {
+  border-top: 1px solid #707070;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.p-price__desc-item:last-of-type {
+  padding-bottom: 0;
+}
+.p-price__desc-item__label {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+.p-price__desc-item__value {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+summary {
+  list-style: none;
+}
+
+.p-faq__qa {
+  padding-top: 26px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #cccccc;
+}
+.p-faq__qa:first-of-type {
+  padding-top: 0;
+}
+
+.p-faq__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+.p-faq__question::before {
+  content: "Q";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: #EB51C2;
+  margin-right: 20px;
+}
+.p-faq__question::after {
+  content: "";
+  display: block;
+  background-image: url(../assets/images/faq/angle-down-solid.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
+  margin-left: auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 12px;
+  height: 8px;
+}
+
+details[open] summary::after {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.p-faq__answer {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.p-faq__answer::before {
+  content: "A";
+  display: block;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: #EB51C2;
+  margin-right: 20px;
 }
 
 .is-hidden {

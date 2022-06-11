@@ -1,0 +1,59 @@
+@use "../foundation/variables" as v;
+
+summary {
+  list-style: none;
+}
+
+.p-faq__qa{
+	padding-top: 26px;
+	padding-bottom: 21px;
+	border-bottom: 1px solid v.$color-border-pale-gray;
+	&:first-of-type{
+		padding-top: 0;
+	}
+}
+
+.p-faq__question {
+  display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+  &::before {
+    content: "Q";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    color: v.$color-pink;
+		margin-right: 20px;
+  }
+	&::after{
+		content: '';
+		display: block;
+		background-image: url(../assets/images/faq/angle-down-solid.png);
+		background-repeat:no-repeat;
+		background-size: 100%;
+		background-size: contain;
+		margin-left: auto;
+		transform: rotate(180deg);
+		width: 12px;height: 8px;
+	}
+}
+
+details[open] summary::after{
+	transform: rotate(0);
+}
+
+.p-faq__answer {
+	margin-top: 30px;
+	display: flex;
+	align-items: flex-start;
+  &::before {
+    content: "A";
+		display: block;
+		font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    color: v.$color-pink;
+		margin-right: 20px;
+  }
+}

@@ -1,0 +1,43 @@
+@use "../foundation/variables" as v;
+
+.p-price {
+  &__card__inner {
+    padding: 40px 20px 30px;
+    text-align: center;
+  }
+  &__course {
+    font-size: 26px;
+    line-height: 64px;
+  }
+  &__price {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  &__admission-fee {
+    font-size: 16px;
+    line-height: 16px;
+  }
+	&__desc-list{
+		margin-top: 30px;
+	}
+  &__desc-item {
+		border-top: 1px solid v.$color-border-gray;
+		padding-top: 30px;
+		padding-bottom: 35px;
+		&:last-of-type{
+			padding-bottom: 0;
+		}
+		&__label{
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 18px;
+		}
+		&__value{
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 16px;
+		}
+
+  }
+}
