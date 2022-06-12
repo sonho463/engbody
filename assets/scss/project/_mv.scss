@@ -1,7 +1,8 @@
 @use "../foundation/variables" as v;
 
-.p-mv {
-  width: 73%;
+
+.bg-img{
+	width: 73%;
   height: 410px;
   margin-left: auto;
   border-bottom-left-radius: 50px;
@@ -11,14 +12,18 @@
   background-position: 50% 0;
 	display: flex;
 	align-items: center;
+	opacity:0;
 }
-
 .p-mv__text-block{
 	position: absolute;
 	top: 161px;
 	left: 0;
 	margin-left: 5%;
+}
 
+.visible{
+	transition:1s;
+	opacity: 1;
 }
 
 .p-mv{
@@ -27,6 +32,7 @@
 		background-color: v.$color-white;
 	}
 	&__title__row{
+		position: relative;
 		font-size: 4.2rem;
 		font-style: italic;
 		font-weight: 500;

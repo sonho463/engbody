@@ -13,8 +13,10 @@
 		margin-left: calc(50% - 50vw);
 	}
 	&__text-block{
+		position: relative;
+		margin-top: -10px;
 		background-color: v.$color-white;
-		transform: translateY(-15px);
+		// transform: translateY(-15px);
 		padding: 42px 10%;
 		border-radius: 5px;
 		box-shadow: 0 0	20px rgba(0,0,0,.2);

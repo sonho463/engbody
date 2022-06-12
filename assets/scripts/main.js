@@ -1,3 +1,21 @@
+// mvアニメーション
+const bgImg = document.querySelector('.js-bg-img');
+const bgAnimationExtend = document.querySelectorAll('.bgAnimationExtend')
+const bgAnimationOpacity = document.querySelectorAll('.bgAnimationOpacity')
+
+const mvAnimation =()=>{
+	bgImg.classList.add('visible');
+	bgAnimationExtend.forEach((e)=>{
+		e.classList.add('bgLRextend');
+	})
+	bgAnimationOpacity.forEach((e)=>{
+		e.classList.add('opacityTo1');
+	})
+}
+
+
+
+window.addEventListener('load',mvAnimation);
 
 
 // トレーナーとスタッフのタブ切り替え

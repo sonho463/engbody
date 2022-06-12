@@ -11,6 +11,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="./build/style.css">
 	<title>Document</title>
 </head>
@@ -33,10 +34,26 @@
 			</div>
 		</header>
 		<section class="l-main">
-			<section class="p-mv">
+			<div class="bg-img js-bg-img">
+
+			</div>
+			<section class="p-mv js-mv">
 				<div class="p-mv__text-block">
-					<h2 class="p-mv__title__row">Body Make</h2><br>
-					<h2 class="p-mv__title__row"><span class="u-text-pink">&amp;</span>English</h2>
+					<h2 class="p-mv__title__row js-mv-title-row">
+						<span class="bgAnimationExtend">
+							<span class="bgAnimationOpacity">
+								Body Make
+							</span>
+						</span>
+					</h2><br>
+					<h2 class="p-mv__title__row js-mv-title-row">
+						<span class="bgAnimationExtend">
+							<span class="bgAnimationOpacity">
+								<span class="u-text-pink">&amp;</span>English
+							</span>
+						</span>
+
+					</h2>
 					<p class="p-mv__sub-title">
 						英会話＆パーソナルトレーニングジム
 					</p>
@@ -77,7 +94,7 @@
 							<figure class="p-features__image-wrapper">
 								<img src="./assets/images/features/about-training.jpg" alt="" class="p-features__image">
 							</figure>
-							<div class="p-features__text-block">
+							<div class="p-features__text-block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 								<p class="p-features__article-tag u-text-pink">
 									Training
 								</p>
@@ -95,7 +112,7 @@
 							<figure class="p-features__image-wrapper">
 								<img src="./assets/images/features/about-food.jpg" alt="" class="p-features__image">
 							</figure>
-							<div class="p-features__text-block">
+							<div class="p-features__text-block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 								<p class="p-features__article-tag u-text-green">
 									Food
 								</p>
@@ -141,7 +158,8 @@
 						</ul>
 						<section class="p-trainer__tab--trainer js-trainer">
 							<ul class="p-trainer__list">
-								<li class="p-trainer__item c-card">
+								<li class="p-trainer__item c-card"
+								data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 									<figure class="p-trainer__image-wrapper">
 										<img src="./assets/images/trainer/trainer01.jpg" alt="トレーナ1人目" class="p-trainer-image">
 									</figure>
@@ -151,7 +169,8 @@
 										</p>
 									</div>
 								</li>
-								<li class="p-trainer__item c-card">
+								<li class="p-trainer__item c-card"
+								data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 									<figure class="p-trainer__image-wrapper">
 										<img src="./assets/images/trainer/trainer02.jpg" alt="トレーナ２人目" class="p-trainer-image">
 									</figure>
@@ -161,7 +180,8 @@
 										</p>
 									</div>
 								</li>
-								<li class="p-trainer__item c-card">
+								<li class="p-trainer__item c-card"
+								data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 									<figure class="p-trainer__image-wrapper">
 										<img src="./assets/images/trainer/trainer03.jpg" alt="トレーナ3人目" class="p-trainer-image">
 									</figure>
@@ -409,21 +429,21 @@
 							<details class="p-faq__qa">
 								<summary class="p-faq__question">
 									<h3 class="p-faq__question__text">
-										見学や体験は可能ですか？
+										用意するものは何がありますか？
 									</h3>
 								</summary>
 								<p class="p-faq__answer">
-									無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。
+									シューズをご持参ください。ウェアとタオルは無料でレンタルが可能です。
 								</p>
 							</details>
 							<details class="p-faq__qa">
 								<summary class="p-faq__question">
 									<h3 class="p-faq__question__text">
-										見学や体験は可能ですか？
+										シャワールームはありますか？
 									</h3>
 								</summary>
 								<p class="p-faq__answer">
-									無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。
+									5つのシャワールームがございます。ボディソープ・シャンプー・リンスなどのアメニティやドライヤーもご用意しております。
 								</p>
 							</details>
 
@@ -465,7 +485,15 @@
 
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./assets/scripts/studio-slide.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="./assets/scripts/main.js"></script>
+	<script>
+		AOS.init({
+			// offset: 300,
+			delay: 100,
+			duration: 500,
+			once: false,
+		});	</script>
 
 
 </body>

@@ -513,6 +513,68 @@ a:hover img {
 }
 
 .l-header {
+  position: relative;
+  z-index: 150;
+}
+
+.p-copy__main-copy {
+  position: relative;
+  z-index: 150;
+}
+
+.bgLRextend::before {
+  z-index: 100;
+}
+
+.opacityTo1 {
+  animation-name: opacityTo1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.bgAnimationOpacity {
+  opacity: 0;
+}
+
+@keyframes opacityTo1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgLRextend::before {
+  animation-name: bgLRextendAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #EB51C2;
+  /*伸びる背景色の設定*/
+}
+
+@keyframes bgLRextendAnime {
+  0% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  50% {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  50.001% {
+    transform-origin: right;
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+}
+.l-header {
   position: fixed;
   display: flex;
   width: 100%;
@@ -628,7 +690,7 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   overflow: hidden;
 }
 
-.p-mv {
+.bg-img {
   width: 73%;
   height: 410px;
   margin-left: auto;
@@ -639,6 +701,7 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   background-position: 50% 0;
   display: flex;
   align-items: center;
+  opacity: 0;
 }
 
 .p-mv__text-block {
@@ -648,11 +711,17 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   margin-left: 5%;
 }
 
+.visible {
+  transition: 1s;
+  opacity: 1;
+}
+
 .p-mv__title__row, .p-mv__sub-title {
   display: inline-block;
   background-color: #fff;
 }
 .p-mv__title__row {
+  position: relative;
   font-size: 4.2rem;
   font-style: italic;
   font-weight: 500;
@@ -708,8 +777,9 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   margin-left: calc(50% - 50vw);
 }
 .p-features__text-block {
+  position: relative;
+  margin-top: -10px;
   background-color: #fff;
-  transform: translateY(-15px);
   padding: 42px 10%;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -980,7 +1050,7 @@ details[open] summary::after {
 }
 
 .u-text-green {
-  color: #f0f8ff !important;
+  color: #00B21B !important;
 }
 
 .u-text-white {
