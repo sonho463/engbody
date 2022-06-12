@@ -18,5 +18,9 @@
 	@include v.mq(tb){
 		display: none;
 	}
+}
 
+.opacity0{
+	opacity: 0;
+	transition: .5s;
 }

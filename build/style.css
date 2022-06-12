@@ -1011,9 +1011,22 @@ div[class*=swiper-button]::after {
   background-color: #EB51C2;
 }
 
+.p-price__card-list__outer {
+  overflow-x: scroll;
+}
+.p-price__card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc((100vw - 80px) * 3);
+}
 .p-price__card__inner {
   padding: 40px 20px 30px;
   text-align: center;
+}
+.p-price__card {
+  margin-left: 20px;
+  width: 100%;
 }
 .p-price__course {
   font-size: 26px;
@@ -1053,7 +1066,7 @@ div[class*=swiper-button]::after {
 .p-price__card-list__outer {
   position: relative;
 }
-.p-price .price-swiper-button-next {
+.p-price .price-button-next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1064,8 +1077,6 @@ div[class*=swiper-button]::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.p-price div[class*=swiper-button] {
   position: absolute;
   z-index: 50;
   right: 0;
@@ -1077,10 +1088,10 @@ div[class*=swiper-button]::after {
   height: 70px;
   border-radius: 10px;
 }
-.p-price div[class*=swiper-button] img {
+.p-price .price-button-next img {
   width: 55px;
 }
-.p-price div[class*=swiper-button]::after {
+.p-price .price-button-next::after {
   font-size: 1rem;
   content: "スクロール";
   margin-top: -5px;
@@ -1214,6 +1225,12 @@ details[open] summary::after {
   .active-sp {
     display: none;
   }
+}
+
+.opacity0 {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .u-text-pink {
