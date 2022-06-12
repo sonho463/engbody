@@ -13,9 +13,19 @@ const mvAnimation =()=>{
 	})
 }
 
-
-
 window.addEventListener('load',mvAnimation);
+
+// スクロール時ヘッダー出現
+const header = document.querySelector('.js-header');
+const cvHeader = document.querySelector('.js-cv-header')
+
+const appearElement = () =>{
+	cvHeader.classList.add('opacityTo1');
+	header.classList.add('animationBgWhite')
+
+}
+
+window.addEventListener('scroll', appearElement)
 
 
 // トレーナーとスタッフのタブ切り替え

@@ -1,16 +1,15 @@
 @use "../foundation/variables" as v;
 
+// opacity 0-1 animation
 .opacityTo1{
 	animation-name: opacityTo1;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-delay: .5s;
 }
-
 .bgAnimationOpacity{
 	opacity: 0;
 }
-
 @keyframes opacityTo1 {
   from {
     opacity: 0;
@@ -20,6 +19,7 @@
   }
 }
 
+// mv 背景横に出てくるアニメーション
 .bgLRextend::before {
   animation-name: bgLRextendAnime;
   animation-duration: 1s;
@@ -47,4 +47,22 @@
     transform-origin: right;
     transform: scaleX(0);
   }
+}
+
+// ヘッダー背景に白つける
+
+.animationBgWhite{
+	animation-name: addBgWhite;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes addBgWhite {
+	from{
+		background-color: transparent;
+	}
+	to{
+		background-color: #fff;
+	}
+
 }

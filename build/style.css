@@ -520,7 +520,7 @@ a:hover img {
 
 .l-header {
   position: relative;
-  z-index: 150;
+  z-index: 160;
 }
 
 .p-copy__main-copy {
@@ -628,6 +628,32 @@ a:hover img {
             transform: scaleX(0);
   }
 }
+.animationBgWhite {
+  -webkit-animation-name: addBgWhite;
+          animation-name: addBgWhite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes addBgWhite {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+
+@keyframes addBgWhite {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #fff;
+  }
+}
 .l-header {
   position: fixed;
   display: -webkit-box;
@@ -650,8 +676,14 @@ a:hover img {
   letter-spacing: 0.25em;
   font-weight: bold;
 }
+@media screen and (min-width:1025px) {
+  .l-header__logo__text {
+    font-size: 2.8rem;
+  }
+}
 
 .l-header__cv-button {
+  opacity: 0;
   height: 36px;
   width: 49.6%;
   width: 186px;
