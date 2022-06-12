@@ -745,6 +745,11 @@ a:hover img {
   padding-bottom: 40px;
   max-width: 700px;
 }
+@media screen and (min-width:1025px) {
+  .c-container {
+    max-width: unset;
+  }
+}
 
 section[class*=p-]:nth-of-type(even):not(.p-copy) {
   background-color: #EB51C2;
@@ -830,12 +835,27 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
           align-items: center;
   opacity: 0;
 }
+@media screen and (min-width:1025px) {
+  .bg-img {
+    height: 680px;
+  }
+}
 
 .p-mv__text-block {
   position: absolute;
   top: 161px;
   left: 0;
   margin-left: 5%;
+}
+@media screen and (min-width:600px) {
+  .p-mv__text-block {
+    top: 120px;
+  }
+}
+@media screen and (min-width:1025px) {
+  .p-mv__text-block {
+    top: 220px;
+  }
 }
 
 .visible {
@@ -855,6 +875,16 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   font-weight: 500;
   line-height: 1;
 }
+@media screen and (min-width:600px) {
+  .p-mv__title__row {
+    font-size: 6.2rem;
+  }
+}
+@media screen and (min-width:1025px) {
+  .p-mv__title__row {
+    font-size: 9rem;
+  }
+}
 .p-mv__title__row span {
   margin-right: 4px;
 }
@@ -863,11 +893,23 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   margin-top: 10px;
   font-weight: 700;
 }
+@media screen and (min-width:1025px) {
+  .p-mv__sub-title {
+    font-size: 2.8rem;
+  }
+}
 .p-mv__cv {
   margin-top: 19px;
   height: 45px;
-  width: 67%;
+  width: 100%;
   font-size: 1.3rem;
+}
+@media screen and (min-width:1025px) {
+  .p-mv__cv {
+    font-size: 2rem;
+    height: 89px;
+    width: 370px;
+  }
 }
 
 .p-copy {
@@ -880,10 +922,20 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   font-style: italic;
   text-align: center;
 }
+@media screen and (min-width:1025px) {
+  .p-copy__main-copy {
+    font-size: 10.8rem;
+  }
+}
 .p-copy__sub-copy {
   font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
+}
+@media screen and (min-width:1025px) {
+  .p-copy__sub-copy {
+    font-size: 3.2rem;
+  }
 }
 .p-copy__body-copy {
   margin-top: 25px;
@@ -891,6 +943,12 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.8;
+}
+@media screen and (min-width:1025px) {
+  .p-copy__body-copy {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 .p-features {
@@ -1018,7 +1076,8 @@ div[class*=swiper-button]::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc((100vw - 80px) * 3);
+  width: 240vw;
+  max-width: 1800px;
 }
 .p-price__card__inner {
   padding: 40px 20px 30px;
@@ -1027,6 +1086,7 @@ div[class*=swiper-button]::after {
 .p-price__card {
   margin-left: 20px;
   width: 100%;
+  max-width: 600px;
 }
 .p-price__course {
   font-size: 26px;

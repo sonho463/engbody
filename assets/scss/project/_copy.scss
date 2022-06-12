@@ -8,11 +8,17 @@
 		font-weight: 700;
 		font-style: italic;
 		text-align: center;
+		@include v.mq(pc){
+			font-size: 10.8rem;
+		}
 	}
 	&__sub-copy{
 		font-size: 1.6rem;
 		font-weight: 700;
 		text-align: center;
+		@include v.mq(pc){
+			font-size: 3.2rem;
+		}
 	}
 	&__body-copy{
 		margin-top: 25px;
@@ -20,6 +26,9 @@
 		font-size:1.5rem;
 		font-weight: 300;
 		line-height: 1.8;
-
+		@include v.mq(pc){
+			font-size: 1.6rem;
+			text-align: center;
+		}
 	}
 }

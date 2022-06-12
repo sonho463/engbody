@@ -4,6 +4,9 @@
 .bg-img{
 	width: 73%;
   height: 410px;
+	@include v.mq(pc){
+		height: 680px;
+	}
   margin-left: auto;
   border-bottom-left-radius: 50px;
   background-image: url(../assets/images/mv/bg_mv.jpg);
@@ -17,6 +20,12 @@
 .p-mv__text-block{
 	position: absolute;
 	top: 161px;
+	@include v.mq(tb){
+		top: 120px;
+	}
+	@include v.mq(pc){
+		top: 220px;
+	}
 	left: 0;
 	margin-left: 5%;
 }
@@ -34,6 +43,12 @@
 	&__title__row{
 		position: relative;
 		font-size: 4.2rem;
+		@include v.mq(tb){
+			font-size: 6.2rem;
+		}
+		@include v.mq(pc){
+			font-size: 9rem;
+		}
 		font-style: italic;
 		font-weight: 500;
 		line-height: 1;
@@ -45,11 +60,19 @@
 		font-size: 1.3rem;
 		margin-top: 10px;
 		font-weight: 700;
+		@include v.mq(pc){
+			font-size: 2.8rem;
+		}
 	}
 	&__cv{
 		margin-top: 19px;
 		height: 45px;
-		width: 67%;
+		width: 100%;
 		font-size: 1.3rem;
+		@include v.mq(pc){
+			font-size: 2.0rem;
+			height: 89px;
+			width: 370px;
+		}
 	}
 }
