@@ -20,14 +20,15 @@ div[class*="swiper-button"]{
 // }
 .p-studio__slider-outer{
 	position: relative;
+	overflow: hidden;
 }
 .swiper-button-next{
 	right: 0;
-	transform: translateX(50%);
+	transform: translateX(40%);
 }
 .swiper-button-prev{
 	left: 0;
-	transform: translateX(-50%);
+	transform: translateX(-40%);
 }
 .swiper-pagination{
 	transform: translate3d(0, 40px,0);

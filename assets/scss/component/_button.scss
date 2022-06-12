@@ -5,9 +5,12 @@
 	border-radius: 999px;
 	height: 100%;
 	width: 100%;
+	max-width: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 	&__text{
 		font-weight: 700;
 		color: v.$color-white;

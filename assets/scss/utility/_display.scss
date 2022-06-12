@@ -13,8 +13,10 @@
 	display: inline-block;
 }
 
-.active-pc{
-	@include v.mq(sm){
+.active-sp{
+	display: inline-block;
+	@include v.mq(tb){
 		display: none;
 	}
+
 }

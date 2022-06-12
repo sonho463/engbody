@@ -670,6 +670,11 @@ a:hover img {
   padding-right: 5%;
   padding-left: 5%;
 }
+@media screen and (min-width:1025px) {
+  .l-header {
+    height: 100px;
+  }
+}
 
 .l-header__logo__text {
   font-size: 1.4rem;
@@ -688,6 +693,13 @@ a:hover img {
   width: 49.6%;
   width: 186px;
   font-size: 1.2rem;
+}
+@media screen and (min-width:1025px) {
+  .l-header__cv-button {
+    height: 60px;
+    width: 300px;
+    font-size: 1.8rem;
+  }
 }
 
 .l-footer {
@@ -731,6 +743,7 @@ a:hover img {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
+  max-width: 700px;
 }
 
 section[class*=p-]:nth-of-type(even):not(.p-copy) {
@@ -756,6 +769,7 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   border-radius: 999px;
   height: 100%;
   width: 100%;
+  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,6 +779,8 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .c-cv-button__text {
   font-weight: 700;
@@ -783,10 +799,12 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   background-image: url(../assets/images/gen/wave.svg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  -webkit-transform: translateY(-1px) rotate(180deg);
+          transform: translateY(-1px) rotate(180deg);
 }
 .c-separator:nth-of-type(even) {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: translateY(1px) rotate(0);
+          transform: translateY(1px) rotate(0);
 }
 
 .c-card {
@@ -969,18 +987,19 @@ div[class*=swiper-button]::after {
 
 .p-studio__slider-outer {
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-button-next {
   right: 0;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
 }
 
 .swiper-button-prev {
   left: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
 }
 
 .swiper-pagination {
@@ -1188,8 +1207,11 @@ details[open] summary::after {
   display: inline-block;
 }
 
+.active-sp {
+  display: inline-block;
+}
 @media screen and (min-width:600px) {
-  .active-pc {
+  .active-sp {
     display: none;
   }
 }

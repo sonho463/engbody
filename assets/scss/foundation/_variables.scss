@@ -17,8 +17,8 @@ $color-border-pale-gray: #cccccc;
 // mixin
 // *----------*
 $breakpoints: (
-	"lg":"screen and (min-width:1025px)",
-  "sm":"screen and (min-width:600px)",
+	"pc":"screen and (min-width:1025px)",
+  "tb":"screen and (min-width:600px)",
 );
 
 @mixin mq($breakpoint:md){
