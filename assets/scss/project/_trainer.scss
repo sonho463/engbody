@@ -22,8 +22,16 @@
 	border-bottom: 2px solid v.$color-white;
 }
 
+.p-trainer__list{
+	display: flex;
+}
+
 .p-trainer__item + li{
 	margin-top: 15px;
+	@include v.mq(pc){
+		margin-top: 0;
+		margin-left: 15px;
+	}
 }
 
 .p-trainer__text-wrapper{

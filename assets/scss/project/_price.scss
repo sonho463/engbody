@@ -8,6 +8,10 @@
     display: flex;
     width: calc(80vw * 3);
 		max-width: calc(600px * 3);
+		@include v.mq(pc){
+			width: 100%;
+			max-width: unset;
+		}
   }
   &__card__inner {
     padding: 40px 20px 30px;
@@ -72,6 +76,9 @@
     width: 80px;
     height: 70px;
     border-radius: 10px;
+		@include v.mq(pc){
+			display: none;
+		}
     img {
       width: 55px;
     }

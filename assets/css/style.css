@@ -864,12 +864,22 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   margin-top: 20px;
 }
 
+@media screen and (min-width:1025px) {
+  .p-features__article {
+    display: flex;
+  }
+}
 .p-features__article + li {
   margin-top: 42px;
 }
 .p-features__image-wrapper {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+}
+@media screen and (min-width:1025px) {
+  .p-features__image-wrapper {
+    flex: 1;
+  }
 }
 .p-features__text-block {
   position: relative;
@@ -879,14 +889,49 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width:1025px) {
+  .p-features__text-block {
+    top: 60px;
+    left: -60px;
+    width: 555px;
+    padding: 60px 5%;
+    height: fit-content;
+  }
+}
 .p-features__article-tag {
   font-size: 1.8rem;
+}
+@media screen and (min-width:1025px) {
+  .p-features__article-tag {
+    font-size: 2.4rem;
+  }
 }
 .p-features__article-title {
   font-size: 2.2rem;
 }
+@media screen and (min-width:1025px) {
+  .p-features__article-title {
+    font-size: 3.2rem;
+    margin-top: 15px;
+  }
+}
 .p-features__article-desc {
   font-size: 1.4rem;
+}
+@media screen and (min-width:1025px) {
+  .p-features__article-desc {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .p-features__article--food {
+    flex-direction: row-reverse;
+  }
+}
+.p-features__article--food .p-features__text-block {
+  top: 90px;
 }
 
 .p-features__cv {
@@ -895,6 +940,11 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   height: 53px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width:1025px) {
+  .p-features__cv {
+    display: none;
+  }
 }
 
 .p-trainer__tab-list {
@@ -920,8 +970,18 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   border-bottom: 2px solid #fff;
 }
 
+.p-trainer__list {
+  display: flex;
+}
+
 .p-trainer__item + li {
   margin-top: 15px;
+}
+@media screen and (min-width:1025px) {
+  .p-trainer__item + li {
+    margin-top: 0;
+    margin-left: 15px;
+  }
 }
 
 .p-trainer__text-wrapper {
@@ -975,6 +1035,12 @@ div[class*=swiper-button]::after {
   display: flex;
   width: 240vw;
   max-width: 1800px;
+}
+@media screen and (min-width:1025px) {
+  .p-price__card-list {
+    width: 100%;
+    max-width: unset;
+  }
 }
 .p-price__card__inner {
   padding: 40px 20px 30px;
@@ -1036,6 +1102,11 @@ div[class*=swiper-button]::after {
   width: 80px;
   height: 70px;
   border-radius: 10px;
+}
+@media screen and (min-width:1025px) {
+  .p-price .price-button-next {
+    display: none;
+  }
 }
 .p-price .price-button-next img {
   width: 55px;
