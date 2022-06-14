@@ -12,6 +12,9 @@
   }
   &__article + li {
     margin-top: 42px;
+		@include v.mq(pc){
+			margin-top: 120px;
+		}
   }
   &__image-wrapper {
     margin-right: calc(50% - 50vw);
@@ -64,6 +67,7 @@
   }
 	.p-features__text-block{
 		top: 90px;
+		left: 40px;
 	}
 }
 
