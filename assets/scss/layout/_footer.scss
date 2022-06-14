@@ -7,8 +7,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
+	@include v.mq(pc){
+		height: 223px;
+	}
   &__text {
     color: v.$color-white;
+		@include v.mq(pc){
+			font-size: 4.0rem;
+		}
   }
   &__back-to-top {
     position: absolute;

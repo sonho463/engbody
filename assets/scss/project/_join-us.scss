@@ -6,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+	@include v.mq(pc){
+		height: 279px;
+	}
 }
 
 .p-join-us__title {
@@ -13,17 +16,30 @@
   font-size: 26px;
   line-height: 26px;
   color: #fff;
+	@include v.mq(pc){
+		font-size: 6.4rem;
+	}
 }
 
 .p-join-us__cv {
   height: 53px;
 	margin-top: 10px;
 	width: 80%;
+	min-width: 400px;
+	@include v.mq(pc){
+		margin-top: 40px;
+		height: 80px;
+		width: 26%;
+	}
+
   .c-cv-button__text {
     font-weight: normal;
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 13px;
     text-align: left;
     color: #eb51c2;
+		@include v.mq(pc){
+			font-size: 2.0rem;
+		}
   }
 }

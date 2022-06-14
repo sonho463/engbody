@@ -716,8 +716,18 @@ a:hover img {
           justify-content: center;
   position: relative;
 }
+@media screen and (min-width:1025px) {
+  .l-footer {
+    height: 223px;
+  }
+}
 .l-footer__text {
   color: #fff;
+}
+@media screen and (min-width:1025px) {
+  .l-footer__text {
+    font-size: 4rem;
+  }
 }
 .l-footer__back-to-top {
   position: absolute;
@@ -763,10 +773,20 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
   font-size: 4rem;
   line-height: 1;
 }
+@media screen and (min-width:1025px) {
+  .c-section-title__text {
+    font-size: 6.4rem;
+  }
+}
 .c-section-title-ja__text {
   margin-top: 5px;
   font-size: 1.4rem;
   line-height: 1;
+}
+@media screen and (min-width:1025px) {
+  .c-section-title-ja__text {
+    font-size: 2rem;
+  }
 }
 
 .c-cv-button {
@@ -1248,6 +1268,7 @@ summary {
   padding-top: 26px;
   padding-bottom: 21px;
   border-bottom: 1px solid #cccccc;
+  font-size: 1.5rem;
 }
 .p-faq__qa:first-of-type {
   padding-top: 0;
@@ -1327,6 +1348,11 @@ details[open] summary::after {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width:1025px) {
+  .p-join-us__body {
+    height: 279px;
+  }
+}
 
 .p-join-us__title {
   font-weight: bold;
@@ -1334,18 +1360,36 @@ details[open] summary::after {
   line-height: 26px;
   color: #fff;
 }
+@media screen and (min-width:1025px) {
+  .p-join-us__title {
+    font-size: 6.4rem;
+  }
+}
 
 .p-join-us__cv {
   height: 53px;
   margin-top: 10px;
   width: 80%;
+  min-width: 400px;
+}
+@media screen and (min-width:1025px) {
+  .p-join-us__cv {
+    margin-top: 40px;
+    height: 80px;
+    width: 26%;
+  }
 }
 .p-join-us__cv .c-cv-button__text {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 13px;
   text-align: left;
   color: #eb51c2;
+}
+@media screen and (min-width:1025px) {
+  .p-join-us__cv .c-cv-button__text {
+    font-size: 2rem;
+  }
 }
 
 .is-hidden {
