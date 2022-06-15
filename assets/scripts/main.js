@@ -20,11 +20,22 @@ const header = document.querySelector(".js-header");
 const cvHeader = document.querySelector(".js-cv-header");
 
 const appearElement = () => {
-  cvHeader.classList.add("opacityTo1");
+	cvHeader.classList.add("opacityTo1");
   header.classList.add("animationBgWhite");
 };
+const disappearElement = () => {
+	header.classList.remove("animationBgWhite");
+	cvHeader.classList.remove('opacityTo1');
+}
 
-window.addEventListener("scroll", appearElement);
+
+window.addEventListener("scroll", ()=>{
+	appearElement();
+	const offsetY = window.scrollY;
+	if(offsetY === 0){
+		disappearElement();
+	}
+});
 
 // トレーナーとスタッフのタブ切り替え
 const trainer = document.querySelector(".js-trainer");
@@ -48,7 +59,6 @@ const activateTrainerTab = () => {
     staff.classList.add("is-hidden");
   }
 };
-
 staffTab.addEventListener("click", activateStaffTab);
 trainerTab.addEventListener("click", activateTrainerTab);
 
@@ -59,5 +69,14 @@ const priceButtonNext = document.querySelector('.js-price-button-next');
 const disappearArrow = () => {
 	priceButtonNext.classList.add('opacity0');
 };
+const appearArrow = () => {
+	priceButtonNext.classList.remove('opacity0');
+}
 
-priceCardList.addEventListener("scroll", disappearArrow);
+priceCardList.addEventListener("scroll",()=>{
+	const offsetX = priceCardList.scrollLeft;
+	disappearArrow()
+	if(offsetX === 0){
+		appearArrow();
+	}
+});
