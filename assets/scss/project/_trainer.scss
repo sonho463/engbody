@@ -28,7 +28,7 @@
 
 .p-trainer__item + li{
 	margin-top: 15px;
-	@include v.mq(pc){
+	@include v.mq(tb){
 		margin-top: 0;
 		margin-left: 15px;
 	}

@@ -1056,9 +1056,17 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
             flex-direction: row-reverse;
   }
 }
-.p-features__article--food .p-features__text-block {
-  top: 90px;
-  left: 40px;
+@media screen and (min-width:600px) {
+  .p-features__article--food .p-features__text-block {
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width:1025px) {
+  .p-features__article--food .p-features__text-block {
+    top: 90px;
+    left: 40px;
+  }
 }
 
 .p-features__cv {
@@ -1112,7 +1120,7 @@ section[class*=p-]:nth-of-type(even):not(.p-copy) {
 .p-trainer__item + li {
   margin-top: 15px;
 }
-@media screen and (min-width:1025px) {
+@media screen and (min-width:600px) {
   .p-trainer__item + li {
     margin-top: 0;
     margin-left: 15px;

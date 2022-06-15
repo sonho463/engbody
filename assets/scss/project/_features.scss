@@ -66,8 +66,14 @@
     flex-direction: row-reverse;
   }
 	.p-features__text-block{
-		top: 90px;
-		left: 40px;
+		@include v.mq(tb){
+			top: 0;
+			left: 0;
+		}
+		@include v.mq(pc){
+			top: 90px;
+			left: 40px;
+		}
 	}
 }
 
